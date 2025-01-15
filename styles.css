@@ -78,7 +78,7 @@ nav {
 main {
     margin-top: 5rem;
 }
-
+ 
 section {
     padding: 6rem 0;
 }
@@ -127,6 +127,7 @@ section {
     object-fit: cover;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -149,4 +150,112 @@ section {
 .skill-icon {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+}
+
+#projetos, #skills {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.projeto-card {
+    background-color: var(--cor-de-fundo-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: var(--transicao);
+    padding: 1.5rem;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+}
+
+.titulo-projeto {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    color: var(--cor-secundaria);
+}
+
+.projeto-tags {
+    display: flex;
+    flex-wrap:  wrap;
+    margin-top: 1rem;
+}
+
+.projeto-tags span {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.contato {
+    background-color: var(--cor-secundaria);
+    color: white;
+}
+
+.contato-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grupo-formulario {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white; 
+}
+
+button {
+    background-color: var(--cor-auxiliar);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+.titulo-contato {
+    color: white;
+}
+
+footer {
+    background-color: var(--cor-de-fundo-card);
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.icones-footer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+@keyframes fade {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fade 1s ease-out;
 }

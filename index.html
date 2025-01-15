@@ -9,10 +9,10 @@
             <nav class="container">
                 <div class="logo"> NB </div>
                 <ul class="nav-links">
-                    <li> <a> Sobre </a> </li>
-                    <li> <a> Skills </a></li>
-                    <li> <a> Projetos </a></li>
-                    <li> <a> Contato </a></li>
+                    <li> <a href="#sobre"> Sobre </a> </li>
+                    <li> <a href="#skills"> Skills </a></li>
+                    <li> <a href="#projetos"> Projetos </a></li>
+                    <li> <a href="#contato"> Contato </a></li>
                 </ul>
             </nav>
         </header>
@@ -27,6 +27,7 @@
                     <img src="dude.png" class="imagem-perfil">
                 </div>
             </section>
+
             <section id="skills" class="container fade-in">
                 <h2> Skills </h2>
                 <div class="skills-grid">
@@ -38,14 +39,74 @@
                     <div class="skill-item">
                         <div class="skill-icon">&#128295;</div>
                         <h3> Backend </h3>
-                        <p> Node.js, Express, Python </p>
+                        <p> Dart, Java, Python </p>
                     </div>
                     <div class="skill-item">
                         <div class="skill-icon">&#128202;</div>
                         <h3> Banco de dados </h3>
-                        <p> MongoDB, PostgreSQL </p>
+                        <p> MongoDB, MySQL </p>
                     </div>
                 </div>
             </section>
+
+            <section id="projetos" class="container fade-in">
+                <h2> Projetos </h2>
+                <div class="projetos-grid">
+                    <div class="projeto-card"> 
+                        <h3 class="titulo-projeto"> Jogo Batalha Naval </h3>
+                        <p> Batalha Naval é um jogo de estratégia para dois jogadores, disputado em um tabuleiro de 10x10. Cujo o objetivo é derrubar todos os navios do seu oponente para se sagrar vencedor. </p>
+                        <div class="projeto-tags">
+                            <span> C </span>
+                        </div>
+                    </div>
+                    <div class="projeto-card">
+                        <h3 class="titulo-projeto"> Workshop-springboot </h3>
+                        <p> Um projeto envolvendo Web Services com Spring Boot e JPA/Hibernate. </p>
+                        <div  class="projeto-tags">
+                            <span> Java </span>
+                            <span> Spring-Boot </span>
+
+                        </div>
+
+                    </div>
+                    <div class="projeto-card">
+                        <h3 class="titulo-projeto"> Shop-Flutter </h3>
+                        <p> Aplicativo de compras, que inclui a opção de adicionar, retirar e solicitar produtos que estão no carrinho, você também pode gerenciar os produtos que estão à venda. </p>
+                        <div class="projeto-tags">
+                            <span> Dart </span>
+                            <span> Flutter </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contato" class="contato fade-in">
+                <h2 class="titulo-contato"> Contate-me! </h2>
+                <form class="contato-form">
+                    <div class="grupo-formulario">
+                        <label for="nome"> Nome </label>
+                        <input id="nome" name="nome" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="email"> Email </label>
+                        <input id="email" name="email" required>
+                    </div>
+                    <div class="grupo-formulario">
+                        <label for="mensagem"> Mensagem </label>
+                        <textarea id="mensagem" name="mensagem" required> </textarea>
+                    </div>
+                    <button type="submit"> Mandar mensagem</button>
+                </form>
+            </section>
+
+            <footer>
+                <ul class="icones-footer">
+                    <li>&#128187;</li>
+                    <li>&#128101;</li>
+                    <li>&#128038;</li>
+                </ul>
+                <p>&copy;  2024 Nedson Bomman. Todos os direitos reservados</p>
+            </footer>
+        </main>
     </body>
 </html>
