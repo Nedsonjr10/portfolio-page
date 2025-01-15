@@ -78,3 +78,75 @@ nav {
 main {
     margin-top: 5rem;
 }
+
+section {
+    padding: 6rem 0;
+}
+
+.dev {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.dev-texto h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    color: var(--cor-primaria)
+}
+
+.dev-texto p {
+    font-size: 1.23rem;
+    margin-bottom: 2rem;
+}
+
+.botao-de-contato {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: var(--transicao);
+}
+
+.botao-de-contato:hover {
+    background-color: var(--cor-secundaria);
+}
+
+.dev-image {
+    position: relative;
+}
+
+.imagem-perfil {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    background-color: var(--cor-de-fundo-card);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px  rgba(0,0,0,0.1);
+    transition: var(--transicao);
+}
+
+.skill-item:hover {
+    transform: translateY(-5px);
+}
+
+.skill-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
